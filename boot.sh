@@ -11,7 +11,7 @@ case "$CMD" in
   -Reboot)
     reboot
     ;;
-  -Offpower)
+  -PowerOff)
     reboot -p
     ;;
   -Recovery)
@@ -21,6 +21,6 @@ case "$CMD" in
     reboot bootloader
     ;;
   *)
-    echo "   Please Select One : $0 [ -Reboot | -Offpower | -Recovery | -Bootloader ]"
+    echo "   Please Select One : $0 [ -Reboot | -PowerOff | -Recovery | -Bootloader ]"
     ;;
 esac
